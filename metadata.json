@@ -1,11 +1,12 @@
 {
-      "name": "puppet-nginx-openresty",
+      "name": "puppet-openresty",
       "version": "1.0.0",
       "author": "Nitin Nagpal",
       "license": "Apache-2.0",
       "summary": "A module for installing openresty from Source",
-      "source": "https://github.com/nitnagpal/puppet-openresty",
-      "issues_url": "https://github.com/nitnagpal/puppet-openresty/issues",
+      "source": "https://github.com/nitnagpal/puppet-nginx-openresty",
+      "project_page": "https://forge.puppetlabs.com/nitnagpal/puppet-openresty",
+      "issues_url": "https://github.com/nitnagpal/puppet-nginx-openresty/issues",
       "tags": ["openrusty", "nignx"],
       "operatingsystem_support": [
         {

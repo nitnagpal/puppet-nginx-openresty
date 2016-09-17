@@ -3,7 +3,9 @@ class openresty {
   include openresty::install
   include openresty::service
 }
-class openresty::install { 
+class openresty::install {
+ 
+ include openresty::prereqs 
 
  Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 

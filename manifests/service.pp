@@ -1,4 +1,5 @@
 class openresty::service {
+  include openresty::install
   service { "openresty":
   ensure  => running,
   start   => "/opt/openresty/nginx/sbin/nginx -c /opt/openresty/nginx/conf/nginx.conf",
