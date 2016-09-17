@@ -9,7 +9,7 @@ class openresty::install {
 
  Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 
- exec { "get openresty" :
+ exec { "Install Openresty" :
     cwd         => "/tmp",
     command     => "/usr/bin/wget -c https://openresty.org/download/openresty-1.11.2.1.tar.gz && /bin/tar xvzf openresty-1.11.2.1.tar.gz \
                     && cd openresty-1.11.2.1 && /tmp/openresty-1.11.2.1/configure --prefix=/opt/openresty \
