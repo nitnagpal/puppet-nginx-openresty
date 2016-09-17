@@ -2,7 +2,7 @@
       "name": "puppet-openresty",
       "version": "1.0.0",
       "author": "Nitin Nagpal",
-      "license": "Apache-2.0",
+      "license": "BSD",
       "summary": "A module for installing openresty from Source",
       "source": "https://github.com/nitnagpal/puppet-nginx-openresty",
       "project_page": "https://forge.puppetlabs.com/nitnagpal/puppet-openresty",
