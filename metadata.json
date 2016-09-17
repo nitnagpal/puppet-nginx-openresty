@@ -1,0 +1,38 @@
+{
+      "name": "puppet-openresty",
+      "version": "1.0.0",
+      "author": "Nitin Nagpal",
+      "license": "BSD",
+      "summary": "A module for installing openresty from Source",
+      "source": "https://github.com/nitnagpal/puppet-nginx-openresty",
+      "project_page": "https://forge.puppetlabs.com/nitnagpal/puppet-openresty",
+      "issues_url": "https://github.com/nitnagpal/puppet-nginx-openresty/issues",
+      "tags": ["openrusty", "nignx"],
+      "operatingsystem_support": [
+	{
+	   "operatingsystem": "CentOS",
+           "operatingsystemrelease": [
+              "7.0",
+              "6.5"
+            ]
+        },
+        {
+      	  "operatingsystem": "Debian",
+          "operatingsystemrelease": [
+             "8.5",
+             "8.0"
+            ]
+        },
+        {
+          "operatingsystem": "Ubuntu",
+          "operatingsystemrelease": [
+             "16.04",
+             "14.04"
+           ]
+        }
+       ],
+      "dependencies": [
+        { "name": "puppetlabs/stdlib", "version_requirement": ">= 3.2.0 < 5.0.0" }
+      ],
+      "data_provider": "none"
+}
