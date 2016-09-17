@@ -22,6 +22,7 @@ class openresty::prereqs () {
             'readline-devel',
             'pcre-devel',
             'openssl-devel',
+            'make',
             'gcc'
         ]
 
