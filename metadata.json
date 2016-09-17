@@ -1,0 +1,20 @@
+{
+      "name": "puppet-nginx-openresty",
+      "version": "1.0.0",
+      "author": "Nitin Nagpal",
+      "license": "Apache-2.0",
+      "summary": "A module for installing openresty from Source",
+      "source": "https://github.com/nitnagpal/puppet-openresty",
+      "issues_url": "https://github.com/nitnagpal/puppet-openresty/issues",
+      "tags": ["openrusty", "nignx"],
+      "operatingsystem_support": [
+        {
+        "operatingsystem": "Ubuntu",
+        "operatingsystemrelease": [ "14.04", "12.04" ]
+        }
+       ],
+      "dependencies": [
+        { "name": "puppetlabs/stdlib", "version_requirement": ">= 3.2.0 < 5.0.0" }
+      ],
+      "data_provider": "none"
+}

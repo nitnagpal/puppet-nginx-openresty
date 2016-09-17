@@ -1,18 +1,16 @@
 class openresty {
+  include openresty::prereqs
   include openresty::install
-  include openresty::config
   include openresty::service
 }
 class openresty::install { 
- class { 'openresty::prereqs': }
 
- exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
+ Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 
  exec { "get openresty" :
     cwd         => "/tmp",
     command     => "/usr/bin/wget -c https://openresty.org/download/openresty-1.11.2.1.tar.gz && /bin/tar xvzf openresty-1.11.2.1.tar.gz \
-                    && cd openresty-1.11.2.1.tar.gz && /tmp/openresty-1.11.2.1.tar.gz/configure --prefix=--prefix=/opt/openresty \
-                    --conf-path=/opt/openresty/nginx.conf \
+                    && cd openresty-1.11.2.1 && /tmp/openresty-1.11.2.1/configure --prefix=/opt/openresty \
                     --with-cc-opt='-O2' \
 		    --with-luajit  \
 		    --with-pcre \
@@ -34,5 +32,6 @@ class openresty::install {
 		    --without-http_rds_csv_module \
     		    && make && make install",
     logoutput   => true,
+    require => Class["openresty::prereqs"],
  }
 } 
