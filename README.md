@@ -11,7 +11,9 @@ Tested with Puppet Masterless on Debian, Ubuntu & CentOS
 Commands to run :-
 
 1. Installing Module
-	puppet module install puppet-nginx-openresty.tar.gz
+
+   `puppet module install puppet-nginx-openresty.tar.gz`
 
 2. Applying the Module
-	puppet apply -e 'include openrestly' 
+
+   ` puppet apply -e 'include openrestly' `
